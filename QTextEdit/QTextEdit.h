@@ -27,23 +27,7 @@ private slots:
     void saveAs();
     void Print();
     void Exit();
-    void Copy();
-    void Cut();
-    void Paste();
-    void undo();
-    void rado();
-
-
-    void selectFont();
-
-    void setFontBold(bool bold);
-    void setFontUnderline(bool underline);
-    void setFontItalic(bool italic);
-
-    void about();
-
-
-
+  
 
 private:
     Ui::QTextEditClass *ui;
