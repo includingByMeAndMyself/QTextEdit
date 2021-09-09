@@ -1,19 +1,27 @@
 #pragma once
 
 #include <QtWidgets/QMainWindow>
+#include <QFileDialog>
+#include <QMessageBox>
+#include <QTextStream>
+
 #include "ui_QTextEdit.h"
 
-class QTextEdit : public QMainWindow
+namespace Ui {
+    class QTextEditClass;
+}
+
+class QTextEditClass : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    QTextEdit(QWidget *parent = Q_NULLPTR);
-    ~QTextEdit();
+    QTextEditClass(QWidget *parent = Q_NULLPTR);
+    ~QTextEditClass();
 
 private slots:
     
-    void newDoc();
+    void newDocument();
     void Open();
     void saveDoc();
     void saveAs();
@@ -38,6 +46,6 @@ private slots:
 
 
 private:
-    Ui::QTextEditClass ui;
-    QString currentFile;S
+    Ui::QTextEditClass *ui;
+    QString currentFile;
 };

@@ -4,7 +4,7 @@
 int main(int argc, char *argv[])
 {
     QApplication EditorApp(argc, argv);
-    QTextEdit Editor;
+    QTextEditClass Editor;
     Editor.show();
     return EditorApp.exec();
 }
